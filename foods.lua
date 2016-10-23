@@ -62,6 +62,9 @@ minetest.register_craft({
 		{'', ing.wheat, ''},
 		{'mtfoods:dandelion_milk', 'default:junglegrass', 'mtfoods:chocolate'},
 		{'', 'vessels:glass_bottle', ''},
+	},
+	replacements = {
+		{ 'mtfoods:dandelion_milk', 'vessels:drinking_glass' }
 	}
 })
 

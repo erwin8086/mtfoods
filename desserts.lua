@@ -99,11 +99,11 @@ minetest.register_craftitem("mtfoods:strawberry_shortcake", {
 -- Crafting --
 
 minetest.register_craft({
-	output = "mtfoods:dandelion_milk 2",
+	output = 'mtfoods:dandelion_milk',
 	recipe = {
-		{'','flowers:dandelion_yellow', ''},
-		{'mtfoods:sugar', 'flowers:dandelion_yellow', 'mtfoods:sugar'},
-		{'', 'vessels:drinking_glass', ''},
+		{'', 'flowers:dandelion_yellow', ''},
+		{'', 'mtfoods:sugar',            ''},
+		{'', 'vessels:drinking_glass',   ''},
 	}
 })
 
@@ -119,6 +119,9 @@ minetest.register_craft({
 		{'mtfoods:dandelion_milk'},
 		{ing.bread},
 		{'mtfoods:sugar'},
+	},
+	replacements = {
+		{'mtfoods:dandelion_milk', 'vessels:drinking_glass'}
 	}
 })
 
@@ -136,6 +139,10 @@ minetest.register_craft({
 		{'mtfoods:sugar', 'mtfoods:dandelion_milk', 'mtfoods:sugar'},
 		{ing.cocoa, ing.cocoa, ing.cocoa},
 		{'mtfoods:sugar', 'mtfoods:dandelion_milk', 'mtfoods:sugar'},
+	},
+	replacements = {
+		{'mtfoods:dandelion_milk', 'vessels:drinking_glass'},
+		{'mtfoods:dandelion_milk', 'vessels:drinking_glass'},
 	}
 })
 
@@ -145,6 +152,9 @@ minetest.register_craft({
 		{'mtfoods:cream'},
 		{'mtfoods:short_bread'},
 		{'default:paper'},
+	},
+	replacements = {
+		{'mtfoods:cream', 'vessels:drinking_glass'},
 	}
 })
 
@@ -153,6 +163,10 @@ minetest.register_craft({
 	recipe = {
 		{'mtfoods:cream', ing.strawberry, 'mtfoods:cream'},
 		{ing.strawberry, 'mtfoods:short_bread', ing.strawberry},
+	},
+	replacements = {
+		{'mtfoods:cream', 'vessels:drinking_glass'},
+		{'mtfoods:cream', 'vessels:drinking_glass'},
 	}
 })
 
@@ -162,6 +176,10 @@ minetest.register_craft({
 		{'', 'mtfoods:sugar', ''},
 		{'mtfoods:dandelion_milk', ing.bread, 'mtfoods:dandelion_milk'},
 		{'', 'mtfoods:sugar', ''},
+	},
+	replacements = {
+		{'mtfoods:dandelion_milk', 'vessels:drinking_glass'},
+		{'mtfoods:dandelion_milk', 'vessels:drinking_glass'},
 	}
 })
 
@@ -170,18 +188,6 @@ minetest.register_craft({
 	recipe = {
 		{'mtfoods:chocolate'},
 		{'mtfoods:cake'},
-	}
-})
-
-core.register_craft({
-	output = 'mtfoods:boston_cream',
-	recipe = {
-		{ '', 'mtfoods:chocolate', '' },
-		{ '', 'mtfoods:cream', '' },
-		{ '', 'mtfoods:cake', '' },
-	},
-	replacements = {
-		{ 'mtfoods:cream', 'vessels:drinking_glass' }
 	}
 })
 
@@ -224,7 +230,7 @@ minetest.register_craft({
 		{'', 'mtfoods:pie_crust', ''},
 	},
 	replacements = {
-		{ 'mtfoods:cream', 'vessels:drinking_glass' }
+		{'mtfoods:cream', 'vessels:drinking_glass'},
 	}
 })
 
@@ -235,7 +241,8 @@ minetest.register_craft({
 		{'', 'mtfoods:pie_crust', ''},
 	},
 	replacements = {
-		{ 'mtfoods:cream', 'vessels:drinking_glass' }
+		{'mtfoods:cream', 'vessels:drinking_glass'},
+		{'mtfoods:cream', 'vessels:drinking_glass'},
 	}
 })
 
@@ -244,6 +251,10 @@ minetest.register_craft({
 	recipe = {
 		{'mtfoods:cream', 'mtfoods:chocolate', 'mtfoods:cream'},
 		{'', 'mtfoods:pie_crust', ''},
+	}
+	replacements = {
+		{'mtfoods:cream', 'vessels:drinking_glass'},
+		{'mtfoods:cream', 'vessels:drinking_glass'},
 	}
 })
 
@@ -255,7 +266,7 @@ minetest.register_craft({
 		{'', 'mtfoods:chocolate', ''},
 	},
 	replacements = {
-		{ 'mtfoods:cream', 'vessels:drinking_glass' }
+		{'mtfoods:cream', 'vessels:drinking_glass'},
 	}
 })
 
