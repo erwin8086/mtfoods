@@ -251,7 +251,7 @@ minetest.register_craft({
 	recipe = {
 		{'mtfoods:cream', 'mtfoods:chocolate', 'mtfoods:cream'},
 		{'', 'mtfoods:pie_crust', ''},
-	}
+	},
 	replacements = {
 		{'mtfoods:cream', 'vessels:drinking_glass'},
 		{'mtfoods:cream', 'vessels:drinking_glass'},
