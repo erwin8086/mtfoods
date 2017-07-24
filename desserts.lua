@@ -4,48 +4,56 @@ minetest.register_craftitem("mtfoods:dandelion_milk", {
 	description = "Dandelion Milk",
 	inventory_image = "mtfoods_milk.png",
 	on_use = minetest.item_eat(1),
+	spoil=3,
 })
 
 minetest.register_craftitem("mtfoods:sugar", {
 	description = "Sugar",
 	inventory_image = "mtfoods_sugar.png",
 	on_use = minetest.item_eat(1),
+	spoil=60,
 })
 
 minetest.register_craftitem("mtfoods:short_bread", {
 	description = "Short Bread",
 	inventory_image = "mtfoods_short_bread.png",
 	on_use = minetest.item_eat(3.5),
+	spoil=8,
 })
 
 minetest.register_craftitem("mtfoods:pie_crust", {
 	description = "Pie Crust",
 	inventory_image = "mtfoods_pie_crust.png",
 	on_use = minetest.item_eat(3.5),
+	spoil=3,
 })
 
 minetest.register_craftitem("mtfoods:cream", {
 	description = "Cream",
 	inventory_image = "mtfoods_cream.png",
 	on_use = minetest.item_eat(1.5),
+	spoil=3,
 })
 
 minetest.register_craftitem("mtfoods:chocolate", {
 	description = "Chocolate Bits",
 	inventory_image = "mtfoods_chocolate_bit.png",
 	on_use = minetest.item_eat(2.5),
+	spoil=60,
 })
 
 minetest.register_craftitem("mtfoods:cupcake", {
 	description = "Cup-Cake",
 	inventory_image = "mtfoods_cupcake.png",
 	on_use = minetest.item_eat(3.5),
+	spoil=3,
 })
 
 minetest.register_craftitem("mtfoods:strawberry_shortcake", {
 	description = "Strawberry Short-Cake",
 	inventory_image = "mtfoods_berry_shortcake.png",
 	on_use = minetest.item_eat(3.5),
+	spoil=3,
 })
 
 --minetest.register_craftitem("mtfoods:cake", {
@@ -285,7 +293,8 @@ minetest.register_node("mtfoods:cake",{
 			{-0.375000,-0.500000,-0.375000,0.375000,-0.187500,0.375000}, --NodeBox 1
 			{-0.312500,-0.500000,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:chocolate_cake",{
@@ -301,7 +310,8 @@ minetest.register_node("mtfoods:chocolate_cake",{
 			{-0.375000,-0.500000,-0.375000,0.375000,-0.187500,0.375000}, --NodeBox 1
 			{-0.312500,-0.500000,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:carrot_cake",{
@@ -317,7 +327,8 @@ minetest.register_node("mtfoods:carrot_cake",{
 			{-0.375000,-0.500000,-0.375000,0.375000,-0.187500,0.375000}, --NodeBox 1
 			{-0.312500,-0.500000,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:apple_pie",{
@@ -334,7 +345,8 @@ minetest.register_node("mtfoods:apple_pie",{
 			{-0.312500,-0.437500,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 			{-0.250000,-0.500000,-0.250000,0.250000,-0.125000,0.250000}, --NodeBox 3
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:rhubarb_pie",{
@@ -351,7 +363,8 @@ minetest.register_node("mtfoods:rhubarb_pie",{
 			{-0.312500,-0.437500,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 			{-0.250000,-0.500000,-0.250000,0.250000,-0.125000,0.250000}, --NodeBox 3
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:banana_pie",{
@@ -368,7 +381,8 @@ minetest.register_node("mtfoods:banana_pie",{
 			{-0.312500,-0.437500,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 			{-0.250000,-0.500000,-0.250000,0.250000,-0.125000,0.250000}, --NodeBox 3
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:pumpkin_pie",{
@@ -385,7 +399,8 @@ minetest.register_node("mtfoods:pumpkin_pie",{
 			{-0.312500,-0.437500,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 			{-0.250000,-0.500000,-0.250000,0.250000,-0.125000,0.250000}, --NodeBox 3
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:boston_cream",{
@@ -402,7 +417,8 @@ minetest.register_node("mtfoods:boston_cream",{
 			{-0.312500,-0.437500,-0.312500,0.312500,-0.062500,0.312500}, --NodeBox 2
 			{-0.250000,-0.500000,-0.250000,0.250000,-0.125000,0.250000}, --NodeBox 3
 		}
-	}
+	},
+	spoil=3,
 })
 
 
@@ -420,7 +436,8 @@ minetest.register_node("mtfoods:cookies",{
 			{-0.187500,-0.312500,-0.187500,0.187500,-0.125000,0.187500}, --NodeBox 2
 			{-0.250000,-0.125000,-0.125000,0.125000,0.062500,0.250000}, --NodeBox 3
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_node("mtfoods:chocolate",{
@@ -436,7 +453,8 @@ minetest.register_node("mtfoods:chocolate",{
 			{-0.312500,-0.500000,-0.187500,0.312500,-0.375000,0.187500}, --NodeBox 1
 			{-0.250000,-0.500000,-0.125000,0.250000,-0.312500,0.125000}, --NodeBox 2
 		}
-	}
+	},
+	spoil=60,
 })
 
 minetest.register_node("mtfoods:cupcake",{
@@ -453,7 +471,8 @@ minetest.register_node("mtfoods:cupcake",{
 			{-0.312500,-0.375000,-0.312500,0.312500,0.000000,0.312500},
 
 		}
-	}
+	},
+	spoil=3,
 })
 
 -- Finis --

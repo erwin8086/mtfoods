@@ -7,6 +7,7 @@ minetest.register_craftitem( "mtfoods:mlt_burger", {
     inventory_image = "mtfoods_mlt.png",
     wield_image = "mtfoods_mlt.png",
     on_use = minetest.item_eat(6.5),
+	spoil=2,
 })
 
 minetest.register_craft({
@@ -25,6 +26,7 @@ minetest.register_craftitem( "mtfoods:potato_slices", {
 	inventory_image = "mtfoods_potato_slices.png",
 	wield_image = "mtfoods_potato_slices.png",
 	on_use = minetest.item_eat(2),
+	spoil=2,
 })
 
 minetest.register_craft({
@@ -39,6 +41,7 @@ minetest.register_craftitem( "mtfoods:potato_chips", {
 	inventory_image = "mtfoods_potato_chips.png",
 	wield_image = "mtfoods_potato_chips.png",
 	on_use = minetest.item_eat(3),
+	spoil=20,
 })
 
 minetest.register_craft({
@@ -54,6 +57,7 @@ minetest.register_craftitem( "mtfoods:medicine", {
 	inventory_image = "mtfoods_medicine.png",
 	wield_image = "mtfoods_medicine.png",
 	on_use = minetest.item_eat(8),
+	spoil=200,
 })
 
 minetest.register_craft({
@@ -81,7 +85,8 @@ minetest.register_node( "mtfoods:casserole",{
 			{-0.375000,-0.500000,-0.375000,0.375000,-0.187500,0.375000},
 			{-0.312500,-0.500000,-0.312500,0.312500,-0.062500,0.312500},
 		}
-	}
+	},
+	spoil=3,
 })
 
 minetest.register_craft({

@@ -20,6 +20,7 @@ minetest.register_craftitem("mtfoods:orange_juice", {
 	description = "Orange Juice",
 	inventory_image = "mtfoods_orange_juice.png",
 	on_use = minetest.item_eat(0.5),
+	spoil=3,
 })
 
 minetest.register_craft({
@@ -34,6 +35,7 @@ minetest.register_craftitem("mtfoods:apple_juice", {
 	description = "Apple Juice",
 	inventory_image = "mtfoods_apple_juice.png",
 	on_use = minetest.item_eat(0.5),
+	spoil=3,
 })
 
 minetest.register_craft({
@@ -55,7 +57,8 @@ minetest.register_node("mtfoods:apple_cider", {
 	groups = {oddly_breakable_by_hand=4, cracky=3},
 	on_rightclick = function(pos, node, player, itemstack)
 		drop = "mtfoods:apple_juice 3"
-	end
+	end,
+	spoil=3,
 })
 
 minetest.register_craft({
